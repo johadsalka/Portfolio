@@ -1,19 +1,3 @@
-/**
- * ============================================================================
- *  YOUR CONTENT LIVES HERE. This is the only file you need to edit.
- * ============================================================================
- *
- *  Every value wrapped in double curly braces is a placeholder you must
- *  replace with your own information. Run `npm run check:content` and it will
- *  list anything you forgot. Do not deploy until it passes.
- *
- *  How to write strong bullets (the Google "XYZ" formula):
- *    "Accomplished [X], as measured by [Y], by doing [Z]."
- *    e.g. "Cut p95 API latency from 480 ms to 120 ms by adding a Redis
- *          read-through cache and batching N+1 queries."
- *  Use real numbers. If you do not have a number, describe the concrete
- *  outcome instead of an adjective. Never invent metrics.
- */
 
 export type Link = { label: string; href: string };
 
@@ -61,137 +45,123 @@ export const navLinks = [
 ] as const;
 
 export const site = {
-  name: "SOHAM",
-  role: "Software Developer",
+  name: "SOHAM RANE",
+  role: "Graduate Computer Science Student | Software Developer",
   headline:
-    "I build {{the kind of systems you build}} that {{the outcome they achieve}}. Interested in {{two or three areas, e.g. distributed systems, developer tools}}.",
+    "I build software and web applications that solve practical problems. Interested in software engineering, artificial intelligence, and building reliable applications.",
   description:
-    "Portfolio of {{Your Name}}, a software engineer. Projects, experience and contact details.",
-  location: "{{City, State}}",
+    "Portfolio of Soham Rane, a Computer Science graduate student at Northeastern University, showcasing software development projects, technical experience, and AI-related work.",
+  location: "Boston, MA",
   availability:
-    "Open to {{2027}} software engineering internships and new-grad roles",
-  email: "{{you@example.com}}",
+    "Open to software engineering and AI engineering opportunities",
+  email: "sohamranesm@gmail.com",
 
-  /**
-   * Put your resume PDF at public/resume.pdf, then set this to "/resume.pdf".
-   * Leave it as an empty string to hide the Resume button.
-   */
-  resumeUrl: "",
+  resumeUrl: "/resSCV.pdf",
 
   socials: {
-    github: "https://github.com/{{your-github-handle}}",
-    linkedin: "https://www.linkedin.com/in/{{your-linkedin-handle}}"
+    github: "https://github.com/johadsalka",
+    linkedin: "https://www.linkedin.com/in/sohamrane96310/"
   },
 
-  about: [
-    "{{Paragraph 1: who you are, what you study or do, and what you are most interested in building.}}",
-    "{{Paragraph 2: one concrete thing that shows depth, e.g. a hard problem you solved or something you taught yourself.}}",
-    "{{Paragraph 3: outside of code, one or two lines that make you memorable.}}",
-  ],
+    about: [
+        "With a data science background and graduate studies in Computer Science at Northeastern's Khoury College, I spend a lot of time bridging structured engineering with conversational and cloud AI. What excites me most to build are interactive products and intelligent workflows—from gamified study platforms and AI agents to data-backed web apps—that turn tricky ideas into clean, everyday tools.",
+        "Through academic work, research, and hands-on projects—including building Al-Will in Microsoft Copilot Studio, developing a cloud AI agent on Amazon Bedrock AgentCore, creating a React AI chatbot with the ChatGPT API, and shipping gamified learning and trekking platforms like Treasure Map Academy and Adventure Venture—I have worked across Java, Python, C++, JavaScript, React, Next.js, Node.js, MongoDB, Firebase, AWS S3, and MySQL. Along the way, I have also explored natural language processing, large language models, and published research on gamified e-learning, focusing on how different system components fit together reliably.",
+        "I am particularly interested in software engineering and the practical application of AI. When I step away from my IDE, you'll usually find me practicing a new spoken language, exploring fresh ideas, and turning concepts into working projects that are fun to use.",
+    ],
 
   highlights: [
-    { value: "{{N}}", label: "{{e.g. production services shipped}}" },
-    { value: "{{N}}", label: "{{e.g. open-source contributions merged}}" },
-    { value: "{{N}}", label: "{{e.g. users or requests served}}" },
+    { value: "8+", label: "Software & AI Builds" },
+    { value: "2", label: "AI Agents Built" },
+    { value: "2", label: "Published Research Papers" },
   ] satisfies Highlight[],
 
   contactBlurb:
-    "I am currently looking for {{roles you want}}. If you are hiring, working on something interesting, or just want to talk about {{a topic you enjoy}}, my inbox is open.",
+    "I am interested in software engineering and AI-related opportunities. Feel free to reach out if you would like to discuss software development, projects, or emerging technologies.",
 
   experience: [
     {
-      company: "{{Company or Lab Name}}",
-      role: "{{Software Engineering Intern}}",
-      period: "{{Jun 2026 to Aug 2026}}",
-      location: "{{City, State or Remote}}",
+      company: "Oasis-Info Byte",
+      role: "Data Science Intern",
+      period: "March 2024 – April 2024",
+      location: "Pune, India",
       bullets: [
-        "{{Shipped X that did Y for Z users or teams, measured by a real metric.}}",
-        "{{Reduced or improved a measurable thing by N% by doing a specific technical thing.}}",
-        "{{Collaborated with N engineers; owned a feature end to end from design doc to production.}}",
+          "Developed machine learning models using Python for Iris flower classification and email spam detection.",
+          "Worked on unemployment analysis using data science techniques.",
+          "Applied programming and data analysis skills to practical data science tasks.",
       ],
-      stack: ["Python", "TypeScript", "PostgreSQL", "AWS"],
-    },
-    {
-      company: "{{Second Role, Research Lab, or Teaching Assistant Position}}",
-      role: "{{Role title}}",
-      period: "{{Sep 2025 to May 2026}}",
-      location: "{{City, State or Remote}}",
-      bullets: [
-        "{{Concrete outcome with a number.}}",
-        "{{Concrete outcome with a number.}}",
-      ],
-      stack: ["Java", "Docker", "Git"],
+      stack: ["Python", "Machine Learning"],
     },
   ] satisfies ExperienceEntry[],
 
   projects: [
     {
-      title: "{{Flagship Project Name}}",
-      year: "{{2026}}",
-      tagline: "{{One line: what it is and who it is for}}",
+      title: "Tresure Map Academy",
+      year: "2025",
+      tagline: "A gamified learning platform designed to make online education more interactive.",
       description:
-        "{{Two sentences: the problem, the system you designed, and the one design decision you are proudest of (and the trade-off you made).}}",
+        "Developed a learning platform with separate learner and creator dashboards. The platform supports quizzes, multiple-choice questions, and fill-in-the-blank activities to provide an interactive learning experience.",
       impact: [
-        "{{Measured result, e.g. sustained N requests/sec at p95 under N ms in load tests.}}",
-        "{{Reliability or scale detail, e.g. zero-downtime deploys, N-node cluster, N GB indexed.}}",
-        "{{Engineering quality, e.g. N% test coverage, CI on every PR, documented architecture.}}",
+          "Implemented learner and creator dashboards for different platform workflows.",
+          "Integrated Firebase Authentication for user authentication.",
+          "Used MongoDB for backend data operations.",
       ],
-      stack: ["TypeScript", "Next.js", "PostgreSQL", "Redis", "Docker"],
+      stack: ["TypeScript", "Next.js","AWS S3", "MongoDB", "Firebase"],
       links: [
-        { label: "Live demo", href: "https://{{your-demo-url}}" },
         {
           label: "Source",
-          href: "https://github.com/{{your-github-handle}}/{{repo-name}}",
+          href: "https://github.com/johadsalka/TresureMapAcademy.git",
         },
       ],
       featured: true,
     },
     {
-      title: "{{Second Project Name}}",
-      year: "{{2025}}",
-      tagline: "{{One line: what it is and who it is for}}",
+      title: "Adventure Venture",
+      year: "2024",
+      tagline: "A web platform for managing trekking advertisements and listings.",
       description:
-        "{{Two sentences: the problem and your approach. Mention the hardest technical part.}}",
+        "Developed a trekking advertisement management platform that allows users to authenticate, create and manage listings, and interact through comments.",
       impact: [
-        "{{Measured result with a number.}}",
-        "{{What you learned or what broke and how you fixed it.}}",
+          "Implemented user authentication.",
+          "Added listing creation, editing, and deletion functionality.",
+          "Implemented commenting functionality for user interaction.",
       ],
-      stack: ["Python", "FastAPI", "PyTorch"],
+      stack: ["Bootstrap 4", "EJS", "Node.js", "MongoDB"],
       links: [
         {
           label: "Source",
-          href: "https://github.com/{{your-github-handle}}/{{repo-name}}",
+          href: "https://github.com/johadsalka/AdventureVenture.git",
         },
       ],
       featured: true,
     },
     {
-      title: "{{Third Project Name}}",
-      year: "{{2025}}",
-      tagline: "{{One line summary}}",
-      description: "{{One or two sentences.}}",
-      impact: ["{{Measured result or concrete outcome.}}"],
-      stack: ["Go", "gRPC"],
+      title: "AI-Will",
+      year: "2026",
+      tagline: "A conversational AI agent developed using Microsoft Copilot Studio.",
+      description: "Designed and built a conversational AI agent using Microsoft Copilot Studio. Configured its behavior, topics, and conversation flows to handle user queries.",
+      impact: [
+          "Configured agent behavior and topics.",
+          "Designed conversation flows to support user queries.",
+      ],
+      stack: ["Microsoft Copilot Studio"],
       links: [
         {
           label: "Source",
-          href: "https://github.com/{{your-github-handle}}/{{repo-name}}",
+          href: "https://teams.microsoft.com/l/app/?titleId=T_80a807e1-2329-8206-ed77-9b29fd6d4413",
         },
       ],
     },
     {
-      title: "{{Fourth Project Name}}",
-      year: "{{2024}}",
-      tagline: "{{One line summary}}",
-      description: "{{One or two sentences.}}",
-      impact: ["{{Measured result or concrete outcome.}}"],
-      stack: ["C++", "CMake"],
-      links: [
-        {
-          label: "Source",
-          href: "https://github.com/{{your-github-handle}}/{{repo-name}}",
-        },
+      title: "Cloud AI Agent",
+      year: "2026",
+      tagline: "A cloud-hosted AI agent built using Amazon Bedrock AgentCore.",
+      description: "Developed an AI agent using Amazon Bedrock AgentCore, gaining hands-on experience with cloud-hosted agent runtimes and cloud AI workflows.",
+      impact: [
+          "Developed an AI agent using Amazon Bedrock AgentCore.",
+          "Worked with cloud-hosted agent runtimes and cloud AI workflows.",
       ],
+      stack: ["Amazon Bedrock AgentCore", "AWS"],
+      links: [],
     },
   ] satisfies Project[],
 
@@ -199,49 +169,64 @@ export const site = {
   skills: [
     {
       name: "Languages",
-      items: ["Python", "TypeScript", "Java", "C++", "SQL"],
+      items: ["Python", "JavaScript", "Java", "C++", "SQL"],
     },
     {
-      name: "Frontend",
-      items: ["React", "Next.js", "Tailwind CSS", "Accessibility"],
+      name: "Web & UI",
+      items: ["HTML5", "CSS3", "React.js", "Next.js", "Node.js", "EJS", "Bootstrap 4", "Tailwind CSS"],
     },
     {
-      name: "Backend & data",
-      items: ["Node.js", "FastAPI", "PostgreSQL", "Redis", "REST", "gRPC"],
+      name: "Databases",
+      items: ["MySQL", "MongoDB", "Firebase"],
     },
     {
-      name: "Cloud & tooling",
-      items: ["AWS", "Docker", "GitHub Actions", "Linux", "Git"],
+      name: "AI & Cloud",
+      items: ["Microsoft Copilot Studio", "Amazon Bedrock AgentCore", "ChatGPT API", "AWS S3"],
     },
     {
-      name: "Fundamentals",
-      items: [
-        "Data structures & algorithms",
-        "System design",
-        "Concurrency",
-        "Testing",
-      ],
+      name: "Developer Tools & Testing",
+      items: ["GitHub", "VS Code", "IntelliJ IDEA", "Jupyter Notebook", "JUnit", "UML"],
     },
   ] satisfies SkillGroup[],
 
   education: [
     {
-      school: "{{University Name}}",
-      degree: "{{B.S. in Computer Science}}",
-      period: "{{2023 to 2027}}",
-      location: "{{City, State}}",
-      gpa: "{{3.X / 4.0}}",
+      school: "Northeastern University - Khoury College of Computer Sciences",
+      degree: "M.S. in Computer Science",
+      period: "2026 - 2028",
+      location: "Boston, MA",
+      gpa: "In Progress",
       details: [
-        "{{Honors, scholarships, or relevant leadership such as a CS club role.}}",
+          "Currently pursuing graduate studies in Computer Science."
       ],
       coursework: [
-        "Data Structures & Algorithms",
-        "Operating Systems",
-        "Computer Networks",
-        "Databases",
-        "Distributed Systems",
-        "Machine Learning",
+        "Programming Design Paradigm",
+        "Database Management Systems",
       ],
     },
+      {
+          school: "SPPU - P.E.S. Modern College of Engineering",
+          degree: "B.E. in Information Technology (Honors in Data Science)",
+          period: "2021 - 2025",
+          location: "Pune, MH",
+          gpa: "8.12/ 10",
+          details: [
+              "Completed Honors specialization in Data Science alongside the B.E. in Information Technology.",
+              "Served as Class Representative, organizing class activities, coordinating student initiatives, and supporting faculty-student engagement."
+          ],
+          coursework: [
+              "Data Structures and Algorithms",
+              "Object-Oriented Programming",
+              "Database Management Systems",
+              "Operating Systems",
+              "Computer Networks",
+              "Software Engineering",
+              "Theory of Computation",
+              "Web Application Development",
+              "Software Project Management",
+              "Human-Computer Interaction",
+              "Distributed Systems"
+          ],
+      },
   ] satisfies EducationEntry[],
 };
