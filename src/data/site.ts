@@ -114,6 +114,37 @@ export const site = {
       ],
       featured: true,
     },
+      {
+          title: "Google Docs Clone",
+          year: "2026",
+          tagline: "A collaborative document editor inspired by Google Docs, featuring rich-text editing and real-time collaboration.",
+          description:
+              "Modernized and extended a collaborative document editing application using Next.js, React, and TypeScript. Implemented document management, rich-text editing, user authentication, and real-time collaboration infrastructure to deliver a seamless document editing experience.",
+          impact: [
+              "Implemented document creation, editing, renaming, and deletion workflows.",
+              "Integrated Clerk for user authentication and Convex for backend operations and database management.",
+              "Integrated Tiptap to provide rich-text editing and document formatting capabilities.",
+              "Configured Liveblocks to support real-time collaboration infrastructure.",
+              "Modernized the technology stack by upgrading dependencies and resolving compatibility issues across Next.js, React, and Tailwind CSS.",
+          ],
+          stack: [
+              "TypeScript",
+              "Next.js 16",
+              "React 19",
+              "Tailwind CSS 4",
+              "Tiptap",
+              "Convex",
+              "Clerk",
+              "Liveblocks",
+          ],
+          links: [
+              {
+                  label: "Source",
+                  href: "https://github.com/johadsalka/nextjs-google-docs-clone.git",
+              },
+          ],
+          featured: true,
+      },
     {
       title: "Adventure Venture",
       year: "2024",
